@@ -8,3 +8,6 @@ def city_search(query: str):
         return CITIES
     if len(query) < 2:
         return []
+    query = query.lower()
+    result = [city for city in CITIES if query in city.lower()]
+    return result

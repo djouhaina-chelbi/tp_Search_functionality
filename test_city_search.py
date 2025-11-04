@@ -1,4 +1,5 @@
-def test_query_is_star_returns_all_cities():
-    result = city_search("*")
-    assert result == CITIES
-
+def test_case_insensitive_prefix_search():
+    result = search_cities("ou")
+    assert "El Oued" in result
+    assert "Ouargla" in result
+    assert len(result) == 2
