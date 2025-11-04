@@ -1,4 +1,4 @@
-def test_city_search():
-    result = city_search("a")
-    assert result == []
+def test_query_is_star_returns_all_cities():
+    result = city_search("*")
+    assert result == CITIES
 

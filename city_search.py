@@ -4,5 +4,7 @@ CITIES = [
     "Skikda", "Medea", "Mostaganem", "Mascara", "Oran"
 ]
 def city_search(query: str):
+    if query == "*":
+        return CITIES
     if len(query) < 2:
         return []
